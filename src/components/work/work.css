@@ -1,0 +1,73 @@
+.programming-work {
+  text-align: center;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Definir 3 columnas en el grid */
+  gap: 20px;
+  justify-items: center;
+  position: relative;
+  width: 100%;
+  height: 400px; /* Aseguramos que el contenedor tenga suficiente altura */
+}
+
+/* Estilo de cada elemento de la galería */
+.gallery-item {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  opacity: 0.8;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra suave y sutil */
+}
+
+/* Imagen dentro del item */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Pila desordenada de imágenes (fuera del grid) */
+.gallery-item:nth-child(1) {
+  transform: rotate(10deg) translate(-40px, -20px);
+}
+
+.gallery-item:nth-child(2) {
+  transform: rotate(-10deg) translate(30px, 10px);
+}
+
+.gallery-item:nth-child(3) {
+  transform: rotate(15deg) translate(20px, -30px);
+}
+
+.gallery-item:nth-child(4) {
+  transform: rotate(-5deg) translate(-30px, 40px);
+}
+
+.gallery-item:nth-child(5) {
+  transform: rotate(5deg) translate(40px, 30px);
+}
+
+/* Efecto de hover: imágenes vuelven a un grid ordenado */
+.gallery:hover .gallery-item {
+  transform: rotate(0deg) translate(0, 0);
+  opacity: 1; /* Vuelven a ser completamente visibles */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+
+/* Cambio en el tamaño y sombra de cada imagen cuando se hace hover sobre un item */
+.gallery-item:hover img:hover {
+  transform: scale(1.1); /* Agrandar la imagen un poco */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}

@@ -1,13 +1,16 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
-import Header from './Header.astro';
+import WorkMenu from "./WorkMenu.tsx";
+import Header from "./Header.astro";
 ---
 
 <div id="container">
-	<Header/>
+  <Header />
+  <WorkMenu client:load/>
 </div>
 
 <style>
-
+  #container {
+    max-width: 600px;
+	margin: 0 auto;
+  }
 </style>
