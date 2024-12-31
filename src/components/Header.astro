@@ -1,0 +1,62 @@
+---
+import profileImage from '../assets/images/pppimage.png';
+const title = "Héctor Rivera";
+const description = "Web developer and designer based in El Salvador with over 3 years of experience. Currently pursuing a Software Development Engineering degree and creating innovative, user-friendly solutions.";
+---
+
+<header class="header">
+  <div class="image" style={`background-image: url(${profileImage.src})`}></div>
+  <div class="container">
+    <h1 class="header-title">{title}</h1>
+    <p class="header-description">{description}</p>
+  </div>
+</header>
+
+<style>
+  .header {
+    padding: 2rem 0;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem; 
+    align-items: center; 
+  }
+
+  .image {
+    height: 115px;
+    width: 115px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background-size: cover; 
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .image:hover {
+    transform: scale(1.1); /* Slight zoom */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  }
+
+  .header-title {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .header-description {
+    font-size: 1.2rem;
+    color: #555;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    justify-content: center; 
+  }
+
+  h1, p {
+    margin: 0;
+    padding: 0;
+  }
+</style>
