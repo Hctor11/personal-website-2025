@@ -1,6 +1,7 @@
 import '../components/styles/Header.css'
 import React, { useState } from "react";
 import ProgrammingWork from './work/ProgrammingWork';
+import DesignWork from './work/DesignWork';
 
 const WorkMenu = () => {
   const [selectedOption, setSelectedOption] = useState("Programming Work");
@@ -15,7 +16,7 @@ const WorkMenu = () => {
       case "Programming Work":
         return <ProgrammingWork />;
       case "Design Work":
-        return <p>This section covers design work, UI/UX, and more...</p>;
+        return <DesignWork />;
       case "Professional Work":
         return <p>Details about professional work experiences and collaborations.</p>;
       default:

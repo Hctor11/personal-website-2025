@@ -9,6 +9,7 @@ h2 {
 }
 
 .gallery {
+  z-index: 10;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Definir 3 columnas en el grid */
   gap: 20px;
@@ -19,25 +20,27 @@ h2 {
 }
 
 .gallery-item {
-  position: relative;
+  position: relative; /* Asegura que los detalles se posicionen dentro de este contenedor */
   width: 200px;
   height: 200px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0.8;
   border-radius: 24px;
-  z-index: 10;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra suave y sutil */
+  z-index: 1; /* Establece un z-index base para los items */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Imagen dentro del item */
 .gallery-item img {
+  cursor: pointer;
+  position: relative;
   width: 100%;
-  z-index: 10;
   height: 100%;
+  z-index: 1;
   object-fit: cover;
   border-radius: 24px;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-}
+} 
+
 
 /* Pila desordenada de imágenes (fuera del grid) */
 .gallery-item:nth-child(1) {
@@ -60,35 +63,40 @@ h2 {
   transform: rotate(5deg) translate(40px, 30px);
 }
 
-/* Efecto de hover: imágenes vuelven a un grid ordenado */
-.gallery:hover .gallery-item {
-  transform: rotate(0deg) translate(0, 0);
-  opacity: 1; /* Vuelven a ser completamente visibles */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+.gallery-item:nth-child(6) {
+  transform: rotate(12deg) translate(40px, 0px);
 }
 
-/* Cambio en el tamaño y sombra de cada imagen cuando se hace hover sobre un item */
+
+.gallery:hover .gallery-item {
+  transform: rotate(0deg) translate(0, 0);
+  z-index: 10;
+  opacity: 1; /* Vuelven a ser completamente visibles */
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  */
+}
+
 .gallery-item:hover img:hover {
+  z-index: 10;
   transform: scale(1.1); /* Agrandar la imagen un poco */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
 }
 
 /* Detalles que aparecen como un cuadro fuera de la imagen */
 .details {
-  position: absolute;
-  z-index: 100;
-  bottom: -120px; /* Ajusta la distancia del cuadro de detalles hacia abajo */
+  position: absolute; /* Posiciona los detalles fuera de la imagen */
+  z-index: 10; /* Asegura que los detalles estén encima de la imagen */
+  bottom: -20px;
   left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
-  transform: translateX(-50%); 
   color: #333;
   padding: 0.6rem;
   border-radius: 12px;
-  width: 200px; /* Ancho fijo para el cuadro */
+  width: 200px;
   opacity: 0;
-  visibility: hidden; /* Oculto por defecto */
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
-  border: #b6b6b6 1px solid;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  border: #d5d5d5 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: start;

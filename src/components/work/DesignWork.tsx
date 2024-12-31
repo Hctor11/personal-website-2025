@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./work.css"; // Asegúrate de tener este archivo CSS
+import "./work.css";
 
 export const PROGRAMMING_PROJECTS = [
   {
     title: "Project 1",
     description: "Description of the project",
     date: "2012",
-    image: "/programming/p1.png",
+    image: "/design/d1.png",
     technologies: ["React", "TypeScript", "CSS"],
     link: "/programming/reactres",
   },
@@ -14,7 +14,7 @@ export const PROGRAMMING_PROJECTS = [
     title: "Project 2",
     description: "Description of the project",
     date: "2012",
-    image: "/programming/p2.png",
+    image: "/design/d2.png",
     technologies: ["React", "TypeScript", "CSS"],
     link: "../assets/images/programming/p2.png",
   },
@@ -22,7 +22,7 @@ export const PROGRAMMING_PROJECTS = [
     title: "Project 3",
     description: "Description of the project",
     date: "22",
-    image: "/programming/p4.png",
+    image: "/design/d4.png",
     technologies: ["React", "TypeScript", "CSS"],
     link: "../assets/images/programming/p2.png",
   },
@@ -30,17 +30,33 @@ export const PROGRAMMING_PROJECTS = [
     title: "Project 5",
     description: "Description of the project",
     date: "22",
-    image: "/programming/p3.png",
+    image: "/design/d3.png",
+    technologies: ["React", "TypeScript", "CSS"],
+    link: "../assets/images/programming/p2.png",
+  },
+  {
+    title: "Project 5",
+    description: "Description of the project",
+    date: "22",
+    image: "/design/d5.png",
+    technologies: ["React", "TypeScript", "CSS"],
+    link: "../assets/images/programming/p2.png",
+  },
+  {
+    title: "Project 5",
+    description: "Description of the project",
+    date: "22",
+    image: "/design/d6.png",
     technologies: ["React", "TypeScript", "CSS"],
     link: "../assets/images/programming/p2.png",
   },
 ];
 
-const ProgrammingWork = () => {
-  const [hovered, setHovered] = useState<number | null>(null); // Tipo de estado ajustado a number | null
+const DesignWork = () => {
+  const [hovered, setHovered] = useState<number | null>(null); 
 
-  const handleMouseEnter = (index: number) => setHovered(index); // Cambia el índice del item que está en hover
-  const handleMouseLeave = () => setHovered(null); // Resetea el hover cuando el mouse sale
+  const handleMouseEnter = (index: number) => setHovered(index); 
+  const handleMouseLeave = () => setHovered(null); 
 
   return (
     <div className="programming-work">
@@ -66,4 +82,4 @@ const ProgrammingWork = () => {
   );
 };
 
-export default ProgrammingWork;
+export default DesignWork;
