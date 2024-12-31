@@ -18,7 +18,6 @@ h2 {
   height: 400px; /* Aseguramos que el contenedor tenga suficiente altura */
 }
 
-/* Estilo de cada elemento de la galería */
 .gallery-item {
   position: relative;
   width: 200px;
@@ -26,12 +25,14 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
   opacity: 0.8;
   border-radius: 24px;
+  z-index: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra suave y sutil */
 }
 
 /* Imagen dentro del item */
 .gallery-item img {
   width: 100%;
+  z-index: 10;
   height: 100%;
   object-fit: cover;
   border-radius: 24px;
@@ -70,4 +71,50 @@ h2 {
 .gallery-item:hover img:hover {
   transform: scale(1.1); /* Agrandar la imagen un poco */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más prominente */
+}
+
+/* Detalles que aparecen como un cuadro fuera de la imagen */
+.details {
+  position: absolute;
+  z-index: 100;
+  bottom: -120px; /* Ajusta la distancia del cuadro de detalles hacia abajo */
+  left: 50%;
+  background-color: #fff;
+  transform: translateX(-50%); 
+  color: #333;
+  padding: 0.6rem;
+  border-radius: 12px;
+  width: 200px; /* Ancho fijo para el cuadro */
+  opacity: 0;
+  visibility: hidden; /* Oculto por defecto */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
+  border: #b6b6b6 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.details-title{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* Muestra los detalles cuando el item está en hover */
+.details.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.details h3 {
+  margin: 0.5rem 0;
+}
+
+.details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.details ul li {
+  margin: 0.3rem 0;
 }
