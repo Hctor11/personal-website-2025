@@ -3,36 +3,36 @@ import "./work.css"; // Asegúrate de tener este archivo CSS
 
 export const PROGRAMMING_PROJECTS = [
   {
-    title: "Project 1",
+    title: "React Resources",
     description: "Description of the project",
-    date: "2012",
+    date: "2023",
     image: "/programming/p1.png",
     technologies: ["React", "TypeScript", "CSS"],
     link: "/programming/reactres",
   },
   {
-    title: "Project 2",
+    title: "Pascaline",
     description: "Description of the project",
-    date: "2012",
+    date: "2024",
     image: "/programming/p2.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "../assets/images/programming/p2.png",
+    link: "/programming/pascaline",
   },
   {
-    title: "Project 3",
+    title: "QR generator",
     description: "Description of the project",
-    date: "22",
+    date: "2024",
     image: "/programming/p4.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "../assets/images/programming/p2.png",
+    link: "/programming/qr",
   },
   {
-    title: "Project 5",
+    title: "Image to ASCII",
     description: "Description of the project",
-    date: "22",
+    date: "2024",
     image: "/programming/p3.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "../assets/images/programming/p2.png",
+    link: "/programming/ascii",
   },
 ];
 
@@ -52,7 +52,9 @@ const ProgrammingWork = () => {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <img src={project.image} alt={project.title} />
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <img src={project.image} alt={project.title} />
+            </a>
             <div className={`details ${hovered === index ? "show" : ""}`}>
               <div className="details-title">
                 <h3>{project.title}</h3>

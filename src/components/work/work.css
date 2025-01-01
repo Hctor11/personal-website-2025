@@ -104,7 +104,7 @@ h2 {
 
 .details-title{
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
 }
 
