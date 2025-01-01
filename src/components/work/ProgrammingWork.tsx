@@ -52,7 +52,7 @@ const ProgrammingWork = () => {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <a href={project.link} rel="noopener noreferrer">
               <img src={project.image} alt={project.title} />
             </a>
             <div className={`details ${hovered === index ? "show" : ""}`}>
