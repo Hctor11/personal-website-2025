@@ -30,3 +30,10 @@
 .menu-option.selected {
   color: #333; /* Color oscuro para la opción seleccionada */
 }
+
+
+@media (max-width: 768px){
+  .work-menu {
+    padding: 1rem;
+  }
+}

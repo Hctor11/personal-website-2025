@@ -3,6 +3,12 @@
   padding: 2rem;
 }
 
+@media (max-width: 768px){
+  .programming-work {
+    padding: 1rem;
+  }
+}
+
 h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -41,7 +47,6 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
 } 
 
-
 /* Pila desordenada de imágenes (fuera del grid) */
 .gallery-item:nth-child(1) {
   transform: rotate(10deg) translate(-40px, -20px);
@@ -66,7 +71,6 @@ h2 {
 .gallery-item:nth-child(6) {
   transform: rotate(12deg) translate(40px, 0px);
 }
-
 
 .gallery:hover .gallery-item {
   transform: rotate(0deg) translate(0, 0);
@@ -102,7 +106,7 @@ h2 {
   justify-content: start;
 }
 
-.details-title{
+.details-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,4 +129,39 @@ h2 {
 
 .details ul li {
   margin: 0.3rem 0;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Una sola columna */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .gallery-item,
+  .gallery-item img,
+  .details {
+    width: 100%; 
+    aspect-ratio: 1/1;
+    transform: none !important; /* Elimina las transformaciones */
+    transition: none !important; /* Elimina las transiciones */
+    box-shadow: none !important; /* Elimina la sombra */
+    opacity: 1; /* Asegura que sean visibles */
+    visibility: visible; /* Asegura que sean visibles */
+  }
+
+  .details {
+    position: static; /* Coloca los detalles debajo del elemento */
+    transform: none;
+    visibility: hidden;
+    padding: 0;
+    border: none;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .details-title {
+    visibility: hidden;
+    justify-content: center; /* Centra el contenido */
+  }
 }
