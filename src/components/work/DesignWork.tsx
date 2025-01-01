@@ -8,7 +8,7 @@ export const PROGRAMMING_PROJECTS = [
     date: "2024",
     image: "/design/d1.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "/programming/reactres",
+    link: "/design/nothing",
   },
   {
     title: "Trigonometrica",
@@ -16,7 +16,7 @@ export const PROGRAMMING_PROJECTS = [
     date: "2024",
     image: "/design/d2.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "../assets/images/programming/p2.png",
+    link: "/design/trigonometrica",
   },
   {
     title: "Commonplace",
@@ -24,7 +24,7 @@ export const PROGRAMMING_PROJECTS = [
     date: "2024",
     image: "/design/d4.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "../assets/images/programming/p2.png",
+    link: "/design/commonplace",
   },
   {
     title: "Alexandria",
@@ -32,7 +32,7 @@ export const PROGRAMMING_PROJECTS = [
     date: "2024",
     image: "/design/d3.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "../assets/images/programming/p2.png",
+    link: "/design/alexandria",
   },
   {
     title: "Advertisements",
@@ -40,7 +40,7 @@ export const PROGRAMMING_PROJECTS = [
     date: "2024",
     image: "/design/d5.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "../assets/images/programming/p2.png",
+    link: "/design/socialmedia",
   },
   {
     title: "Dribbble Works",
@@ -48,15 +48,15 @@ export const PROGRAMMING_PROJECTS = [
     date: "202X",
     image: "/design/d6.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "../assets/images/programming/p2.png",
+    link: "/design/dribbble",
   },
 ];
 
 const DesignWork = () => {
-  const [hovered, setHovered] = useState<number | null>(null); 
+  const [hovered, setHovered] = useState<number | null>(null);
 
-  const handleMouseEnter = (index: number) => setHovered(index); 
-  const handleMouseLeave = () => setHovered(null); 
+  const handleMouseEnter = (index: number) => setHovered(index);
+  const handleMouseLeave = () => setHovered(null);
 
   return (
     <div className="programming-work">
@@ -68,7 +68,9 @@ const DesignWork = () => {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <img src={project.image} alt={project.title} />
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <img src={project.image} alt={project.title} />
+            </a>
             <div className={`details ${hovered === index ? "show" : ""}`}>
               <div className="details-title">
                 <h3>{project.title}</h3>
