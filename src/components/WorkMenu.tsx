@@ -2,6 +2,7 @@ import '../components/styles/Header.css'
 import React, { useState } from "react";
 import ProgrammingWork from './work/ProgrammingWork';
 import DesignWork from './work/DesignWork';
+import ProfessionalWork from './work/ProfessionalWork';
 
 const WorkMenu = () => {
   const [selectedOption, setSelectedOption] = useState("Programming Work");
@@ -18,7 +19,7 @@ const WorkMenu = () => {
       case "Design Work":
         return <DesignWork />;
       case "Professional Work":
-        return <p>Details about professional work experiences and collaborations.</p>;
+        return <ProfessionalWork />;
       default:
         return null;
     }
