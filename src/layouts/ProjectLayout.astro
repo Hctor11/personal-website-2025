@@ -19,6 +19,15 @@ const { title } = Astro.props; // Recibe el título como prop
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
 
+  *::-moz-selection {
+    color: rgb(189, 189, 189);
+    background: rgb(81, 81, 81);
+  }
+
+  *::selection {
+    color: rgb(189, 189, 189);
+    background: rgb(81, 81, 81);
+  }
   
   .old-standard-tt-regular {
     font-family: "Old Standard TT", serif;

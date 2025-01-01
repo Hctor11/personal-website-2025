@@ -3,15 +3,19 @@
   padding: 2rem;
 }
 
-@media (max-width: 768px){
-  .programming-work {
-    padding: 1rem;
-  }
-}
-
 h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+*::-moz-selection {
+  color: rgb(189, 189, 189);
+  background: rgb(81, 81, 81);
+}
+
+*::selection {
+  color: rgb(189, 189, 189);
+  background: rgb(81, 81, 81);
 }
 
 .gallery {

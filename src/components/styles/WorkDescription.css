@@ -34,3 +34,13 @@ img{
     border-radius: 24px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+*::-moz-selection {
+    color: rgb(189, 189, 189);
+    background: rgb(81, 81, 81);
+  }
+
+  *::selection {
+    color: rgb(189, 189, 189);
+    background: rgb(81, 81, 81);
+  }
