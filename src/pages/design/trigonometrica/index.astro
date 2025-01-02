@@ -2,6 +2,8 @@
 import Navigation from "@/components/Navigation.astro";
 import Layout from "@/layouts/ProjectLayout.astro";
 import "../../../components/styles/WorkDescription.css";
+import image1 from "#/projects/trigonometrica/01-min.png";
+import image2 from "#/projects/trigonometrica/02-min.png";
 ---
 
 <Layout title="Trigonometrica">
@@ -13,10 +15,10 @@ import "../../../components/styles/WorkDescription.css";
 
     <div class="bento">
       <div class="bento-item">
-        <img loading="lazy" src="/public/projects/trigonometrica/01-min.png" alt="Nothing Phone 2a" />
+        <img loading="lazy" src={image1.src} alt="Nothing Phone 2a" />
       </div>
       <div class="bento-item">
-        <img loading="lazy" src="/public/projects/trigonometrica/02-min.png" alt="Nothing Phone 2a" />
+        <img loading="lazy" src={image2.src} alt="Nothing Phone 2a" />
       </div>
     </div>
     <p>
