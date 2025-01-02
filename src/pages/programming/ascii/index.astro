@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation.astro";
 import Layout from "@/layouts/ProjectLayout.astro";
 import "../../../components/styles/WorkDescription.css";
+import image from "#/projects/ascii/image.png";
 ---
 
 <Layout title="Image to ASCII">
@@ -13,8 +14,8 @@ import "../../../components/styles/WorkDescription.css";
 
     <img
       loading="lazy"
-      src="/public/projects/ascii/image.png"
-      alt="Pascaline"
+      src={image.src}
+      alt="Image to ASCII"
     />
 
     <p>

@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation.astro";
 import Layout from "@/layouts/ProjectLayout.astro";
 import "../../../components/styles/WorkDescription.css";
+import image from "#/projects/reactres/screen.png";
 ---
 
 <Layout title="React Resources">
@@ -15,7 +16,7 @@ import "../../../components/styles/WorkDescription.css";
         Web application designed to help React developers of all levels discover high-quality resources that can enhance their skills and knowledge.
     </p>
 
-    <img  loading="lazy"  src="/public/projects/reactres/screen.png" alt="">
+    <img  loading="lazy"  src={image.src} alt="REACT RESOURCES">
 
     <p>
         It serves as a centralized hub, offering tools to streamline the learning process and empower developers to build modern, efficient, and scalable web applications.

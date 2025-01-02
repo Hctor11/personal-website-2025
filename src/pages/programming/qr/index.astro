@@ -2,6 +2,7 @@
 import Navigation from "@/components/Navigation.astro";
 import Layout from "@/layouts/ProjectLayout.astro";
 import "../../../components/styles/WorkDescription.css";
+import image from "#/projects/qr/screen.png";
 ---
 
 <Layout title="QR Generator">
@@ -19,8 +20,8 @@ import "../../../components/styles/WorkDescription.css";
 
     <img
       loading="lazy"
-      src="/public/projects/qr/screen.png"
-      alt="Pascaline"
+      src={image.src}
+      alt="qr generator"
     />
 
     <ul>
