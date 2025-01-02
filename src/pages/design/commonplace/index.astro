@@ -2,6 +2,10 @@
 import Navigation from "@/components/Navigation.astro";
 import Layout from "@/layouts/ProjectLayout.astro";
 import "../../../components/styles/WorkDescription.css";
+import image1 from "#/projects/commonplace/10-min.png";
+import image2 from "#/projects/commonplace/09-min.png";
+import image3 from "#/projects/commonplace/18-min.png";
+
 ---
 
 <Layout title="Commonplace">
@@ -20,14 +24,14 @@ import "../../../components/styles/WorkDescription.css";
       <div class="bento-item">
         <img
           loading="lazy"
-          src="/public/projects/commonplace/10-min.png"
+          src={image1.src}
           alt="Nothing Phone 2a"
         />
       </div>
       <div class="bento-item">
         <img
           loading="lazy"
-          src="/public/projects/commonplace/09-min.png"
+          src={image2.src}
           alt="Nothing Phone 2a"
         />
       </div>
@@ -35,7 +39,7 @@ import "../../../components/styles/WorkDescription.css";
     <div class="bento-item">
       <img
         loading="lazy"
-        src="/public/projects/commonplace/08-min.png"
+        src={image3.src}
         alt="Nothing Phone 2a"
       />
     </div>
