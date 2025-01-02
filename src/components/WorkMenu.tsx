@@ -11,7 +11,6 @@ const WorkMenu = () => {
     setSelectedOption(option); // Cambia la opción seleccionada al hacer clic
   };
 
-  // Contenido personalizado para cada opción
   const renderContent = () => {
     switch (selectedOption) {
       case "Programming Work":
