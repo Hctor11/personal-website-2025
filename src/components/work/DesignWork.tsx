@@ -3,20 +3,20 @@ import "./work.css";
 
 export const PROGRAMMING_PROJECTS = [
   {
-    title: "Nothing Phone 2a",
+    title: "Cabuda",
     description: "Description of the project",
-    date: "2024",
-    image: "/design/d1.png",
+    date: "2025",
+    image: "/design/d4.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "/design/nothing",
+    link: "/design/cabuda",
   },
   {
-    title: "Trigonometrica",
+    title: "Silver Voluntarios",
     description: "Description of the project",
-    date: "2024",
-    image: "/design/d2.png",
+    date: "2025",
+    image: "/design/d4.png",
     technologies: ["React", "TypeScript", "CSS"],
-    link: "/design/trigonometrica",
+    link: "/design/commonplace",
   },
   {
     title: "Commonplace",
@@ -33,6 +33,22 @@ export const PROGRAMMING_PROJECTS = [
     image: "/design/d3.png",
     technologies: ["React", "TypeScript", "CSS"],
     link: "/design/alexandria",
+  },
+  {
+    title: "Nothing Phone 2a",
+    description: "Description of the project",
+    date: "2024",
+    image: "/design/d1.png",
+    technologies: ["React", "TypeScript", "CSS"],
+    link: "/design/nothing",
+  },
+  {
+    title: "Trigonometrica",
+    description: "Description of the project",
+    date: "2024",
+    image: "/design/d2.png",
+    technologies: ["React", "TypeScript", "CSS"],
+    link: "/design/trigonometrica",
   },
   {
     title: "Advertisements",

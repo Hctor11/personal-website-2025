@@ -5,7 +5,7 @@ import DesignWork from './work/DesignWork';
 import ProfessionalWork from './work/ProfessionalWork';
 
 const WorkMenu = () => {
-  const [selectedOption, setSelectedOption] = useState("Programming Work");
+  const [selectedOption, setSelectedOption] = useState("Design Work");
 
   const handleOptionClick = (option:any) => {
     setSelectedOption(option); // Cambia la opción seleccionada al hacer clic
@@ -27,7 +27,7 @@ const WorkMenu = () => {
   return (
     <div className="work-menu">
       <div className="menu-options">
-        {["Programming Work", "Design Work", "Professional Work"].map((option) => (
+        {[ "Design Work","Programming Work", "Professional Work"].map((option) => (
           <button
             key={option}
             className={`menu-option ${selectedOption === option ? "selected" : ""}`}

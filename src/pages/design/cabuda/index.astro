@@ -1,0 +1,43 @@
+---
+import Navigation from "@/components/Navigation.astro";
+import Layout from "@/layouts/ProjectLayout.astro";
+import "../../../components/styles/WorkDescription.css";
+import image1 from "#/projects/cabuda/01.png";
+import image2 from "#/projects/cabuda/02.png";
+
+---
+
+<Layout title="Cabuda">
+  <main class="detailed-description">
+    <Navigation />
+    <a href="https://www.behance.net/gallery/223566911/Cabuda-App-UI-Study-Case" target="_blank">
+      <h1>Cabuda App</h1>
+    </a>
+
+        <img
+          loading="lazy"
+          src={image1.src}
+          alt="Social Media Designs"
+        />
+
+
+    <p>
+      Cabuda is a digital platform designed to facilitate the tokenization of financial assets, connecting retail investors with small and medium-sized enterprises (SMEs) through an innovative business model.
+    </p>
+
+    <p>
+        With a user-first approach, the UI/UX design of Cabuda focuses on building trust, simplifying complex financial processes, and offering a clean and intuitive interface. The experience is carefully crafted to introduce users to the world of tokenized finance with confidence, clarity, and ease of use.
+    </p>
+
+    <img
+    loading="lazy"
+    src={image2.src}
+    alt="Social Media Designs"
+  />
+
+
+    <a href="https://www.behance.net/gallery/223566911/Cabuda-App-UI-Study-Case" target="_blank">
+      project
+    </a>
+  </main>
+</Layout>
