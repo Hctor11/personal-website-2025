@@ -1,0 +1,41 @@
+---
+import Navigation from "@/components/Navigation.astro";
+import Layout from "@/layouts/ProjectLayout.astro";
+import "../../../components/styles/WorkDescription.css";
+import image1 from "#/projects/silver/thumb.png";
+import image2 from "#/projects/silver/2033.png";
+---
+
+<Layout title="Silver Voluntarios">
+  <main class="detailed-description">
+    <Navigation />
+    <a
+      href="https://www.behance.net/gallery/222762935/Silver-Voluntarios-Volunteering-app-study-case"
+      target="_blank"
+    >
+      <h1>Silver Voluntarios App</h1>
+    </a>
+
+    <img loading="lazy" src={image2.src} alt="Social Media Designs" />
+
+    <p>
+      Silver Voluntarios is a platform dedicated to connecting senior citizens
+      with volunteer opportunities.
+    </p>
+
+    <img loading="lazy" src={image1.src} alt="Social Media Designs" />
+
+    <p>
+      With a user-first approach, the UI/UX design of Cabuda focuses on building
+      trust, simplifying complex financial processes, and offering a clean and
+      intuitive interface. The experience is ca
+    </p>
+
+    <a
+      href="https://www.behance.net/gallery/222762935/Silver-Voluntarios-Volunteering-app-study-case"
+      target="_blank"
+    >
+      project
+    </a>
+  </main>
+</Layout>
