@@ -17,7 +17,7 @@ const WorkMenu = () => {
         return <ProgrammingWork />;
       case "Design Work":
         return <DesignWork />;
-      case "Professional Work":
+      case "Career Roadmap":
         return <ProfessionalWork />;
       default:
         return null;
@@ -27,7 +27,7 @@ const WorkMenu = () => {
   return (
     <div className="work-menu">
       <div className="menu-options">
-        {[ "Design Work","Programming Work", "Professional Work"].map((option) => (
+        {[ "Design Work","Programming Work", "Career Roadmap"].map((option) => (
           <button
             key={option}
             className={`menu-option ${selectedOption === option ? "selected" : ""}`}

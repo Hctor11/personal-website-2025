@@ -20,8 +20,35 @@ const ProfessionalWork = () => {
       collapse
       withoutDay
     >
+      {/* <Events
+        title="Frontend Developer (React)"
+        subtitle="AVIANCA LifeMiles"
+        startDate="07/01/2025"
+        defaultClosed
+      >
+        <Event
+          title="Description"
+          description={[
+            "Design and implement user interfaces using React Vite.",
+          ]}
+        />
+      </Events> */}
       <Events
-        title="Frontend Developer"
+        title="Frontend Developer (React) | UI/UX Designer"
+        subtitle="Conexion El Salvador"
+        endDate="07/01/2025"
+        startDate="01/01/2025"
+        defaultClosed
+      >
+        <Event
+          title="Description"
+          description={[
+            "Design and implement user interfaces using Figma and React or Next.",
+          ]}
+        />
+      </Events>
+      <Events
+        title="Frontend Developer (React)"
         subtitle="Illuminodes"
         endDate="11/01/2024"
         startDate="09/01/2024"
@@ -37,7 +64,7 @@ const ProfessionalWork = () => {
         />
       </Events>
       <Events
-        title="Frontend Developer | UI/UX Designer"
+        title="Frontend Developer (C#) | UI/UX Designer"
         subtitle="Colegio Salarrue"
         endDate="09/01/2023"
         startDate="02/01/2023"
@@ -52,7 +79,7 @@ const ProfessionalWork = () => {
         />
       </Events>
       <Events
-        title="Frontend Developer | UI/UX Designer"
+        title="Frontend Developer (Java) | UI/UX Designer"
         subtitle="Cellworld"
         endDate="08/01/2022"
         startDate="02/01/2022"
