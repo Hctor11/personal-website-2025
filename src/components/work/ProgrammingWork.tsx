@@ -3,6 +3,14 @@ import "./work.css"; // Asegúrate de tener este archivo CSS
 
 export const PROGRAMMING_PROJECTS = [
   {
+    title: "Typo",
+    description: "Description of the project",
+    date: "2025",
+    image: "/programming/p5.png",
+    technologies: ["React", "TypeScript", "CSS"],
+    link: "/programming/typo",
+  },
+  {
     title: "React Resources",
     description: "Description of the project",
     date: "2023",

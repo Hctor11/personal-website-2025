@@ -1,0 +1,38 @@
+---
+import Navigation from "@/components/Navigation.astro";
+import Layout from "@/layouts/ProjectLayout.astro";
+import "../../../components/styles/WorkDescription.css";
+import image from "#/projects/typo/01.png";
+---
+
+<Layout title="React Resources">
+  <main class="detailed-description">
+    <Navigation />
+    <a href="https://typo-nu.vercel.app/" target="_blank">
+      <h1>Typo</h1>
+    </a>
+
+    <p>
+        Typo is a sleek and minimal typing test app designed to measure speed and accuracy in real time. Built for focus and performance tracking, it offers a clean interface and responsive feedback for users looking to sharpen their typing skills.
+    </p>
+
+    <img  loading="lazy"  src={image.src} alt="REACT RESOURCES">
+
+    <p>
+        It serves as a centralized hub, offering tools to streamline the learning process and empower developers to build modern, efficient, and scalable web applications.
+    </p>
+    <ul>
+        <li>
+            React Vite
+        </li>
+        <li>
+            Tailwind CSS
+        </li>
+
+    </ul>
+
+    <a href="https://typo-nu.vercel.app/" target="_blank">
+        website
+    </a>
+  </main>
+</Layout>
