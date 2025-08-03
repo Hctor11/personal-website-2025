@@ -20,7 +20,7 @@ const ProfessionalWork = () => {
       collapse
       withoutDay
     >
-      {/* <Events
+      <Events
         title="Frontend Developer (React)"
         subtitle="AVIANCA LifeMiles"
         startDate="07/01/2025"
@@ -32,7 +32,7 @@ const ProfessionalWork = () => {
             "Design and implement user interfaces using React Vite.",
           ]}
         />
-      </Events> */}
+      </Events>
       <Events
         title="Frontend Developer (React) | UI/UX Designer"
         subtitle="Conexion El Salvador"
